@@ -7,8 +7,6 @@
         }
     },
 
-    "workspaceFolder": "/usr/src/angulapp",
-
     "forwardPorts": [4200, 22],
 
     "extensions": [
@@ -21,5 +19,7 @@
 
     //"postCreateCommand": "npm install",
 
-    "remoteUser": "node"
+    "remoteUser": "node",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/opt/angulapp,type=bind",
+    "workspaceFolder": "/opt/angulapp"
 }
