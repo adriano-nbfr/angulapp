@@ -1,0 +1,23 @@
+{
+    "name": "Angulapp",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "args": {
+            "VARIANT" : "18.12-bullseye-slim"
+        }
+    },
+
+    "forwardPorts": [4200],
+
+    "extensions": [
+ 		"angular.ng-template",
+		"johnpapa.angular2",
+		"alexiv.vscode-angular2-files",
+		"esbenp.prettier-vscode",
+		"dbaeumer.vscode-eslint"
+    ],
+
+    //"postCreateCommand": "npm install",
+
+    "remoteUser": "node"
+}
