@@ -17,9 +17,9 @@
 		"dbaeumer.vscode-eslint"
     ],
 
-    //"postCreateCommand": "npm install",
+    "postCreateCommand": "npm install",
 
     "remoteUser": "node",
-    "workspaceMount": "source=${localWorkspaceFolder},target=/opt/angulapp,type=bind",
-    "workspaceFolder": "/opt/angulapp"
+    "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/angulapp,type=bind",
+    "workspaceFolder": "/workspaces/angulapp"
 }
