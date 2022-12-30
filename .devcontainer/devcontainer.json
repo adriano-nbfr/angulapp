@@ -17,7 +17,7 @@
 		"dbaeumer.vscode-eslint"
     ],
 
-    "postCreateCommand": "npm install",
+    "postCreateCommand": "cd hello && npm install",
 
     "remoteUser": "node",
     "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/angulapp,type=bind",
