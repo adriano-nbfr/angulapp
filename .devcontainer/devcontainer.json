@@ -23,3 +23,4 @@
     "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/angulapp,type=bind",
     "workspaceFolder": "/workspaces/angulapp"
 }
+
