@@ -9,13 +9,18 @@
 
     "forwardPorts": [4200, 22],
 
-    "extensions": [
- 		"angular.ng-template",
-		"johnpapa.angular2",
-		"alexiv.vscode-angular2-files",
-		"esbenp.prettier-vscode",
-		"dbaeumer.vscode-eslint"
-    ],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "angular.ng-template",
+                "johnpapa.angular2",
+                "alexiv.vscode-angular2-files",
+                "steoates.autoimport",
+                "esbenp.prettier-vscode",
+                "dbaeumer.vscode-eslint"
+            ]
+        }
+    },
 
     "postCreateCommand": "cd hello && npm install",
 
