@@ -3,11 +3,10 @@ FROM node:${VARIANT}
 
 # Configure apt
 ENV DEBIAN_FRONTEND=noninteractive
-RUN apt-get update \
-    && apt-get -y install --no-install-recommends apt-utils 2>&1
+RUN apt-get update && apt-get -y install --no-install-recommends apt-utils 2>&1
 
 # Install Git
-#RUN apt install -y git
+RUN apt install -y git
 
 # Install the Angular CLI
 RUN npm install -g @angular/cli@15.0.4

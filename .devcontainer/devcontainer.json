@@ -12,12 +12,12 @@
     "customizations": {
         "vscode": {
             "extensions": [
+                "esbenp.prettier-vscode",
+                "dbaeumer.vscode-eslint",
                 "angular.ng-template",
                 "johnpapa.angular2",
                 "alexiv.vscode-angular2-files",
-                "steoates.autoimport",
-                "esbenp.prettier-vscode",
-                "dbaeumer.vscode-eslint"
+                "steoates.autoimport"
             ]
         }
     },
