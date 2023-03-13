@@ -3,7 +3,7 @@
     "build": {
         "dockerfile": "Dockerfile",
         "args": {
-            "VARIANT" : "18.12-bullseye-slim"
+            "VARIANT" : "19.7.0-bullseye-slim"
         }
     },
 

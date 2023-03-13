@@ -113,7 +113,7 @@
   }
 
   .card-container .card:not(:last-child) {
-    /*margin-right: 0;*/
+    margin-right: 0;
   }
 
   .card.card-small {
@@ -389,6 +389,25 @@
     </a>
 
   </div>
+
+
+  <div>
+    <table style="text-align: left" *ngIf="usuarios$ | async as usuarios; else nenhumUsuario">
+      <thead>
+        <th>Nome</th>
+        <th>E-mail</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let usuario of usuarios">
+          <td>{{usuario.name}}</td><td>{{usuario.email}}</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <ng-template #nenhumUsuario><div><b>Nenhum usuário encontrado.</b></div></ng-template>
+  </div>
+
+
 
   <!-- Next Steps -->
   <h2>Next Steps</h2>

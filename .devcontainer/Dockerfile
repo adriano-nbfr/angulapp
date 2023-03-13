@@ -1,18 +1,11 @@
-ARG VARIANT="18.12-bullseye-slim"
+ARG VARIANT="19.7.0-bullseye-slim"
 FROM node:${VARIANT}
 
 # Configure apt
-ENV DEBIAN_FRONTEND=noninteractive
-RUN apt-get update && apt-get -y install --no-install-recommends apt-utils 2>&1
+RUN apt-get -y update && apt-get install -y git --no-install-recommends
 
-# Install Git
-RUN apt install -y git
-
-# Install the Angular CLI
-RUN npm install -g @angular/cli@15.0.4
-
-# Clean up
-ENV DEBIAN_FRONTEND=dialog
+# Install the Angular CLI   
+RUN npm install -y -g @angular/cli@15.0.4
 
 # Expose port 4200
 EXPOSE 4200
